@@ -4,7 +4,8 @@
 
 This application combines real-time weather data with local cultural information to suggest the best activities based on current conditions.
 
-
+![image](https://github.com/user-attachments/assets/fba282bb-9ee9-473c-a7e1-df843366d3a5)
+*
 
 ## 🌟 Features
 
@@ -33,56 +34,59 @@ This application combines real-time weather data with local cultural information
    ```bash
    git clone https://github.com/yourusername/cultural-weather-explorer.git
    cd cultural-weather-explorer
-Create and activate a virtual environment:
+   ```
 
-bash
-Copy
-python -m venv venv
-source venv/bin/activate  # Linux/MacOS
-venv\Scripts\activate    # Windows
-Install dependencies:
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Linux/MacOS
+   venv\Scripts\activate    # Windows
+   ```
 
-bash
-Copy
-pip install -r requirements.txt
-Set up your API keys:
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Create a .env file in the project root
+4. Set up your API keys:
+   - Create a `.env` file in the project root
+   - Add your API keys:
+     ```
+     OPENWEATHER_API_KEY=your_key_here
+     TICKETMASTER_API_KEY=your_key_here
+     OPENTRIPMAP_API_KEY=your_key_here
+     ```
 
-Add your API keys:
+## 🚀 Usage
 
-Copy
-OPENWEATHER_API_KEY=your_key_here
-TICKETMASTER_API_KEY=your_key_here
-OPENTRIPMAP_API_KEY=your_key_here
-🚀 Usage
-Basic Usage
-bash
-Copy
+### Basic Usage
+```bash
 python main.py
+```
 (Uses your current location)
 
-Specify a Location
-bash
-Copy
+### Specify a Location
+```bash
 python main.py --location "Paris"
-Launch GUI Version
-bash
-Copy
+```
+
+### Launch GUI Version
+```bash
 python main.py --gui
-Combine Options
-bash
-Copy
+```
+
+### Combine Options
+```bash
 python main.py --location "New York" --gui
-Output Formats
-Console (default)
+```
 
-Graphical Interface (--gui flag)
+### Output Formats
+- Console (default)
+- Graphical Interface (--gui flag)
+- JSON output (for developers)
 
-JSON output (for developers)
-
-📂 Project Structure
-Copy
+## 📂 Project Structure
+```
 cultural_weather_explorer/
 ├── main.py                # Main application entry point
 ├── config.py              # Configuration and API keys
@@ -102,23 +106,12 @@ cultural_weather_explorer/
 │   └── cache.py           # API response caching
 ├── requirements.txt       # Dependencies
 └── README.md              # This file
+```
 
-🎨 GUI Features
-Dynamic theming: Changes colors based on weather
+## 🎨 GUI Features
+- Dynamic theming: Changes colors based on weather
+- Interactive tabs: Browse weather, events, and attractions
+- Responsive design: Adapts to different screen sizes
+- Quick links: Direct access to event tickets
+- Visual weather display: With icons and detailed metrics
 
-Interactive tabs: Browse weather, events, and attractions
-
-Responsive design: Adapts to different screen sizes
-
-Quick links: Direct access to event tickets
-
-Visual weather display: With icons and detailed metrics
-
-
-
-✉️ Contact
-For questions or support, please contact:
-
-Your Name - your.email@example.com
-
-Project Link: https://github.com/yourusername/cultural-weather-explorer
